@@ -1,0 +1,11 @@
+
+<footer class="footer mt-auto py-3 bg-dark fixed-bottom">
+	<!--<div class="container">
+		<span class="text-muted">© 2021 Copyright: Centennial College</span>
+	</div>-->
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+		<h6 class="navbar-text">© Copyright 2021. All Rights reserved.</h6>
+	</nav>
+</footer>
+</body>
+</html>

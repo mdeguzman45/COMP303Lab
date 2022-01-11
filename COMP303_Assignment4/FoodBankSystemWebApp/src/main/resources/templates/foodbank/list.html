@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div id="title" class="mb-3">
+            <h1>Food Banks List</h1>
+        </div>
+        <table id="allSeekers" class="table table-striped">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Phone</th>
+                <th><a th:href="@{|/foodbanks/add|}"><i class="fas fa-plus fa-lg"></i> Add Food Bank</a></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="result" data-th-each="foodbank : ${foodbanks}">
+                <td>[[${foodbank.name}]]</td>
+                <td>[[${foodbank.city}]]</td>
+                <td>[[${foodbank.address}]]</td>
+                <td>[[${foodbank.phone}]]</td>
+                <td><a th:href="@{|/foodbanks/${foodbank.id}|}"><i class="fas fa-info-circle fa-lg"></i></a>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div id="title" class="mb-3">
+            <h1>Seekers List</h1>
+        </div>
+        <table id="allSeekers" class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th><a th:href="@{|/seekers/add|}"><i class="fas fa-plus fa-lg"></i> Add Seeker</a></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="result" data-th-each="seeker : ${seekers}">
+                <td>[[${seeker.id}]]</td>
+                <td>[[${seeker.lastName}]]</td>
+                <td>[[${seeker.firstName}]]</td>
+                <td><a th:href="@{|/seekers/${seeker.id}|}"><i class="fas fa-info-circle fa-lg"></i></a>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+@charset "ISO-8859-1";
+
+.product-details {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-details-section {
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.product-details-section-item {
+	width: 100px;
+	color: #1e286a;	
+}
+
+.product-details-section-item.bold {
+	font-weight: bold;
+}
+
+.product-details-section-item-model {
+	width: 250px;
+	color: #1e286a;	
+}
+
+.section-divider {
+	height: 20px;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.customer-info-section {
+	display: flex;
+	flex-direction: row;
+}
+
+.customer-info-section-header {
+	width: 140px;
+	font-weight: bold;
+	color: #af3042;
+}
+
+.customer-info-section-item {
+	color: #af3042;
+}

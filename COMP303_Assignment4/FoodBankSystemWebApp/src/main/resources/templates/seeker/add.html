@@ -1,0 +1,44 @@
+<form class="add-container" method="post">
+  <div class="mb-3">
+  	<input type="hidden" class="form-control" name="id" value="0" required>
+    <label for="name" class="form-label">Name</label>
+    <div class="d-flex">
+    	<div class="me-3">
+    		<input type="text" class="form-control" name="firstName" required>
+    		<div class="form-text">First Name</div>
+    	</div>
+    	<div>
+    		<input type="text" class="form-control" name="lastName" required>
+    		<div class="form-text">Last Name</div>
+    	</div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="birthday" class="form-label">Birth Date</label>
+    <input type="date" class="form-control" name="dateOfBirth" required>
+  </div>
+  <div class="mb-3">
+    <label for="birthday" class="form-label">Gender</label>
+    <div>
+    	<input type="radio" id="male" name="gender" value="Male" required>
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="Female">
+		<label for="female">Female</label><br>
+		<input type="radio" id="other" name="gender" value="Other">
+		<label for="other">Other</label>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="city" class="form-label">City</label>
+    <input type="text" class="form-control" name="city">
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone / Mobile</label>
+    <input type="text" maxlength="14" class="form-control" name="phone">
+  	<div class="form-text">6471234567</div>
+  </div>
+  <div class="d-flex justify-content-evenly">
+  	<button type="reset" class="btn btn-secondary">Clear</button>
+  	<button type="submit" class="btn btn-primary">Add Seeker</button>
+  </div>
+</form>

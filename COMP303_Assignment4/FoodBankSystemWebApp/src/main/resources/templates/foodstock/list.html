@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div id="title" class="mb-3">
+            <h1>FoodStocks List</h1>
+        </div>
+        <table id="allFoodStocks" class="table table-striped">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Quantity</th>
+                <th>Best Before</th>
+                <th><a th:href="@{|/foodstocks/add|}"><i class="fas fa-plus fa-lg"></i> Add Food Stock</a></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="result" data-th-each="foodstock : ${foodstocks}">
+                <td>[[${foodstock.name}]]</td>
+                <td>[[${foodstock.type}]]</td>
+                <td>[[${foodstock.quantity}]]</td>
+                <td>[[${#temporals.format(foodstock.bestBefore, 'MMMM dd, yyyy')}]]</td>
+                <td><a th:href="@{|/foodstocks/${foodstock.id}|}"><i class="fas fa-info-circle fa-lg"></i></a>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

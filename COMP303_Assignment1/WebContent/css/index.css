@@ -1,0 +1,63 @@
+h2 {
+	text-transform: uppercase;
+}
+
+label {
+	font-family: -webkit-pictograph;
+}
+
+div.product-details {
+	width: 100px;
+}
+
+input {
+	height: 20px;
+}
+
+input.name-input {
+	width: 200px;
+}
+
+input.email-input {
+	width: 400px;
+}
+
+.section-heading {
+	width: 800px;
+	background-color: #dfdcdc;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.section-divider {
+	height: 20px;
+}
+
+.form-section-row {
+	padding-top: 10px;
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.form-section-column {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-section-item-row {
+	padding-right: 5px;
+}
+
+.form-section-item-column {
+	padding-top: 5px;
+}
+
+button.submit {
+	background-color: #66c1e9;
+	border-radius: 4px;
+	height: 30px;
+	width:125px;
+	color: white;
+	font-family: -webkit-pictograph;
+}

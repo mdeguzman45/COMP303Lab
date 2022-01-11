@@ -1,0 +1,44 @@
+<form class="add-container" method="post">
+  <div class="mb-3">
+  	<input type="hidden" class="form-control" name="id" th:value="${seeker.id}" required>
+    <label for="name" class="form-label">Name</label>
+    <div class="d-flex">
+    	<div class="me-3">
+    		<input type="text" class="form-control" name="firstName" th:value="${seeker.firstName}" required>
+    		<div class="form-text">First Name</div>
+    	</div>
+    	<div>
+    		<input type="text" class="form-control" name="lastName" th:value="${seeker.lastName}" required>
+    		<div class="form-text">Last Name</div>
+    	</div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="birthday" class="form-label">Birth Date</label>
+    <input type="date" class="form-control" name="dateOfBirth" th:value="${seeker.dateOfBirth}" required>
+  </div>
+  <div class="mb-3">
+    <label for="birthday" class="form-label">Gender</label>
+    <div>
+    	<input type="radio" id="male" name="gender" value="Male" th:field="${seeker.gender}" required>
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="Female" th:field="${seeker.gender}">
+		<label for="female">Female</label><br>
+		<input type="radio" id="other" name="gender" value="Other" th:field="${seeker.gender}">
+		<label for="other">Other</label>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="city" class="form-label">City</label>
+    <input type="text" class="form-control" name="city" th:value="${seeker.city}">
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone / Mobile</label>
+    <input type="text" maxlength="14" class="form-control" name="phone" th:value="${seeker.phone}">
+  	<div class="form-text">6471234567</div>
+  </div>
+  <div class="d-flex justify-content-evenly">
+  	<button type="button" class="btn btn-secondary" onclick="goBack()">Back</button>
+  	<button type="submit" class="btn btn-primary">Update Info</button>
+  </div>
+</form>
